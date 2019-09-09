@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rush-responsive</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar starts here -->
+        <div class="mobile-navbar">
+            <div class="mobile-container">
+                <div class="nav-header">
+                    <div class="logo">
+                        <img src="image/rush-logo2.png" class="brand">
+                    </div>
+                    <div class="nav-btn">
+                        <label for="drop" onclick="mobileExpand()" class="toggle">Menu</label>
+                    </div>
+                </div>
+
+                <div class="mobile-menu">
+
+                    <div>
+                        <ul class="mobile-items" id="myMenu">
+                            <li><a href="#">
+                                    <strong>HOME</strong><br>
+                                    <p>Get Started</p>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <strong>ABOUT US</strong><br>
+                                    <p>Get Started</p>
+                                </a>
+                            </li>
+                            <li class="MobileExplore-dropdown" onclick="mobileExplore()" onBlur="test()"><a href="#">
+                                    <strong>EXPLORE NEPAL</strong>
+                                    <img src="image/headdown.png">
+                                    <br>
+                                    <p>Get Started</p>
+                                </a>
+                                <div class="MobileExplore-menu" id="myExplore">
+                                    <ul>
+                                        <li><a class="MobileDrop-menu" href="#">Action</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Another action</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Something else here</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Separated link</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">One more separated link</a></li>
+                                    </ul>
+
+
+                                </div>
+                            </li>
+                            <li class="MobileTravel-dropdown" onclick="mobileTravel()"><a href="#">
+                                    <strong>TRAVEL SHOP</strong>
+                                    <img src="image/headdown.png">
+                                    <br>
+                                    <p>Get Started</p>
+                                </a>
+                                <div class="MobileTravel-menu" id="myTravel">
+                                    <ul>
+                                        <li><a class="MobileDrop-menu" href="#">Action</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Another action</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Something else here</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">Separated link</a></li>
+                                        <li><a class="MobileDrop-menu" href="#">One more separated link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="user-img" src="image/user.jpg">
+                                <span class="mobileSpan">
+                                    <img src="image/tripadvisor.png">
+                                    <br>
+                                    OVER 30 YEARS OF EXPERIENCE
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+
+
+        <div class="navbar">
+            <div class="navbar-contents">
+                <div class="logo">
+                    <img class="brand" src="image/rush-logo2.png">
+                </div>
+                <div class="navbar-menu">
+                    <ul class="menu-items">
+                        <li><a href="#">
+                                <strong>HOME</strong><br>
+                                <p>Get Started</p>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <strong>ABOUT US</strong><br>
+                                <p>Get Started</p>
+                            </a>
+                        </li>
+                        <li class="explore-dropdown" onclick="explore()" onBlur="test()"><a href="#">
+                                <strong>EXPLORE NEPAL</strong>
+                                <img src="image/headdown.png">
+                                <br>
+                                <p>Get Started</p>
+                            </a>
+                            <div class="explore-menu" id="exploreMenu">
+                                <ul>
+                                    <li><a class="drop-menu" href="#">Action</a></li>
+                                    <li><a class="drop-menu" href="#">Another action</a></li>
+                                    <li><a class="drop-menu" href="#">Something else here</a></li>
+                                    <li><a class="drop-menu" href="#">Separated link</a></li>
+                                    <li><a class="drop-menu" href="#">One more separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="travel-dropdown" onclick="travel()"><a href="#">
+                                <strong>TRAVEL SHOP</strong>
+                                <img src="image/headdown.png">
+                                <br>
+                                <p>Get Started</p>
+                            </a>
+                            <div class="travel-menu" id="travelMenu">
+                                <ul>
+                                    <li><a class="drop-menu" href="#">Action</a></li>
+                                    <li><a class="drop-menu" href="#">Another action</a></li>
+                                    <li><a class="drop-menu" href="#">Something else here</a></li>
+                                    <li><a class="drop-menu" href="#">Separated link</a></li>
+                                    <li><a class="drop-menu" href="#">One more separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="user-img1">
+                            <img class="user-img" src="image/user.jpg">
+                            <span class="span">
+                                <img src="image/tripadvisor.png">
+                                <br>
+                                OVER 30 YEARS OF EXPERIENCE
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear:both"></div>
+        <!-- Navbar ends here -->
+
+        <!-- Slider starts here -->
+        <div class="slide-container">
+            <div class="slideshow">
+                <img src="image/BANNERS/bg-banner1.jpg">
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="search-container">
+                <div class="search-head">
+                    <ul class="search-tags">
+                        <li class="search-places">Places Search</li>
+                        <li class="search-new">Newly Printed</li>
+                    </ul>
+                </div>
+                <div class="search-form">
+                    <input type="text" class="days search-btn1" placeholder="HOW MANY DAYS?">
+                    <input type="text" class="want search-btn1" placeholder="WHAT YOU WANT TO DO?">
+                    <input type="text" class="destination search-btn1" placeholder="WHERE DO YOU WANT TO GO?">
+                    <button class="search-btn">MIGHT GET LUCKY</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slider ends here -->
+
+        <!-- Popular starts here -->
+        <div class="popular">
+            <div class="popular-container">
+                <div class="popular-headings">
+                    <button class="popular-btn1 popular-btn">Most Popular</button>
+                    <button class="popular-btn2 popular-btn">Best 2019 Season</button>
+                    <button class="popular-btn3 popular-btn">Attitude</button>
+                    <button class="popular-btn4 popular-btn">Latest Season</button>
+                </div>
+                <div class="popular-img">
+                    <div class="popular-thumbnail">
+                        <img class="popular-banner" src="./image/img1.jpg" alt="banner">
+                        <!-- <img class="popular-tag" src="./image/ghfdjgfgfj.png" alt="banner-tag"> -->
+                    </div>
+                    <div class="popular-gallery1 wheat-woman">
+                        <img src="./image/upper-col-4img.jpg" alt="image1">
+                        <div class="popular-gallery1contents">
+                            <span>
+                                <h4>Nepal Introductory Tour </h4>
+
+                                <P>Duration : 16 Days</P>
+
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting dustry . ...
+                                    Lorem Ipsum is simply dummy text of the printing and types
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="popular-gallery2 wheat-woman">
+                        <img src="./image/upper-col-4img.jpg" alt="image2">
+                        <div class="popular-gallery1contents">
+                            <span>
+                                <h4>Ghorepani-Poon Hill </h4>
+
+                                <P>Duration : 16 Days</P>
+
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting dustry . ...
+                                    Lorem Ipsum is simply dummy text of the printing and types
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="popular-gallery3 wheat-woman">
+                        <img src="./image/upper-col-4img.jpg" alt="image3">
+                        <div class="popular-gallery1contents">
+                            <span>
+                                <h4>Feel home with the mountain people</h4>
+
+                                <P>Duration : 16 Days</P>
+
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting dustry . ...
+                                    Lorem Ipsum is simply dummy text of the printing and types
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-img2">
+                    <div class="popular-grid2">
+                        <div class="row">
+                            <div class="hike">
+                                <img src="./image/hike.jpg">
+                                <img src="./image/hike.jpg">
+                            </div>
+                            <div class="hike">
+                                <img src="./image/hike.jpg">
+                                <img src="./image/hike.jpg">
+                            </div>
+                        </div>
+                        <div class="popular-thumbnail">
+                            <img class="popular-banner" id="popular-banner" src="./image/img1.jpg" alt="banner">
+                        </div>
+                        <div class="popular-gallery3 wheat-woman">
+                            <img src="./image/upper-col-4img.jpg" alt="image3">
+                            <div class="popular-gallery1contents">
+                                <span>
+                                    <h4>Feel home with the mountain people </h4>
+
+                                    <P>Duration : 16 Days</P>
+
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting dustry . ...
+                                        Lorem Ipsum is simply dummy text of the printing and types
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular ends here -->
+
+        <!-- package starts here -->
+        <div class="package">
+            <div class="package-container">
+                <div class="package-row">
+                    <div class="package1 odd">
+                        <img src="./image/pckg-1.png">
+                        <span class="pre">
+                            <h3>Family Holidays</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting dustry </p>
+                        </span>
+                    </div>
+                    <div class="package1 even">
+                        <img src="./image/pkg-2.png">
+                        <span class="pre">
+                            <h3>Get Involved</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting dustry </p>
+                        </span>
+                    </div>
+                    <div class="package1 odd">
+                        <img src="./image/pckg-1.png">
+                        <span class="pre">
+                            <h3>Family Holidays</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting dustry </p>
+                        </span>
+                    </div>
+                    <div class="package1 even" id="last">
+                        <img src="./image/pckg-4.png">
+                        <span class="pre">
+                            <h3>Get Involved</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting dustry </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- package ends here -->
+
+        <!-- Buddha banner starts here -->
+        <div class="buddha">
+            <div class="buddha-container">
+                <div class="buddha-row">
+                    <div class="buddha1">
+                        <img src="./image/col5.jpg">
+                        <span class="buddh-span buddh1">
+                            <h3>BUDDHA</h3>
+                            <p>Lorem Ipsum is simply dummy Lorem Ipsum is simply....</p>
+                        </span>
+                    </div>
+                    <div class="buddha1">
+                        <img src="./image/col3.jpg">
+                        <span class="buddh-span buddh2">
+                            <h3>BUDDHA</h3>
+                            <p>Lorem Ipsum is simply dummy Lorem Ipsum is simply....</p>
+                        </span>
+                    </div>
+                    <div class="buddha1">
+                        <img src="./image/col4.jpg">
+                        <span class="buddh-span buddh3">
+                            <h3>BUDDHA</h3>
+                            <p>Lorem Ipsum is simply dummy Lorem Ipsum is simply....</p>
+                        </span>
+                    </div>
+                    <div class="buddha1">
+                        <img src="./image/col2.jpg">
+                        <span class="buddh-span buddh4">
+                            <h3>BUDDHA</h3>
+                            <p>Lorem Ipsum is simply dummy Lorem Ipsum is simply....</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buddha banner ends here -->
+
+        <!-- testimonial starts here -->
+        <div class="testimonial">
+            <div class="testimonial-container">
+                <div class="testimonial-row">
+                    <div class="testimonial1">
+                        <img src="./image/sliderimg2.jpg">
+                        <span>
+                            <h4>Feel home with the mountain peaople nd their culture</h4>
+                            <p>
+                                the book contains about 500 photos and brief descriptions of 108 temples and other
+                                details regarding these
+                                sites of Nepal. This book is first of its kind, where you can find
+                            </p>
+                        </span>
+                    </div>
+                    <div class="testimonial1" id="testimonial-second">
+                        <img src="./image/sliderimg2.jpg">
+                        <span>
+                            <h4>Feel home with the mountain peaople nd their culture</h4>
+                            <p>
+                                the book contains about 500 photos and brief descriptions of 108 temples and other
+                                details regarding these
+                                sites of Nepal. This book is first of its kind, where you can find
+                            </p>
+                        </span>
+                    </div>
+                    <div class="testimonial1" id="testimonial-last">
+                        <img src="./image/sliderimg2.jpg">
+                        <span>
+                            <h4>Feel home with the mountain peaople nd their culture</h4>
+                            <p>
+                                the book contains about 500 photos and brief descriptions of 108 temples and other
+                                details regarding these
+                                sites of Nepal. This book is first of its kind, where you can find
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonial ends here -->
+
+        <!-- bunji starts here -->
+
+        <div class="bunji">
+            <div class="bunji-container">
+                <div class="bunji-slideshow">
+                    <img class="bunji-img" src="./image/bunji.jpg">
+                </div>
+                <div class="bunji-nav">
+                    <div class="bunji-head">
+                        <h3>THINGS TO
+                            <br>
+                            ADVENTURE
+                        </h3>
+                        <p>Are you looking for<br>
+                            Adrealine rush in travel</p>
+                        <button class="bunji-btn">+VIEW ALL</button>
+                    </div>
+                    <div class="bunji-grid">
+                        <img src="./image/bbelow1.jpg">
+                        <img src="./image/bbelow2.jpg">
+                        <img src="./image/bbelow3.jpg">
+                        <img class="bunji-last" src="./image/bbelow4.jpg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bunji ends here -->
+
+        <!-- footer starts here -->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-books">
+                        <div class="book">
+                            <img src="./image/books.png">
+                            <span>
+                                <h4>BUY TRAVEL BOOKS AND MAP</h4>
+                                <p>the book contains about 500 photos
+                                    and brief descriptions of 108
+                                    temples and other details regarding these sites of Nepal.....
+                                </p>
+                            </span>
+                        </div>
+                        <div class="book">
+                            <img src="./image/books.png">
+                            <span>
+                                <h4>BUY TRAVEL BOOKS AND MAP</h4>
+                                <p>the book contains about 500 photos
+                                    and brief descriptions of 108
+                                    temples and other details regarding these sites of Nepal.....
+                                </p>
+                            </span>
+                        </div>
+                        <div class="book book3">
+                            <img src="./image/books.png">
+                            <span>
+                                <h4>BUY TRAVEL BOOKS AND MAP</h4>
+                                <p>the book contains about 500 photos
+                                    and brief descriptions of 108
+                                    temples and other details regarding these sites of Nepal.....
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reference">
+                    <div class="reference-box">
+                        <div class="reference-contents1">
+                            <h5>ABOUT US</h5>
+                            <ul class="about">
+                                <li>Home</li>
+                                <li>Feedback</li>
+                                <li>Report a Problem</li>
+                                <li>Site Map</li>
+                                <li>Career Resource</li>
+                            </ul>
+                        </div>
+                        <div class="reference-contents2">
+                            <h5>COMMUNITY</h5>
+                            <ul class="community">
+                                <li>Objective</li>
+                                <li>Community Services</li>
+                                <li>How we work</li>
+                                <li>Privacy Commitment</li>
+                                <li>Terms of use</li>
+                                <li>Our Team</li>
+                            </ul>
+                        </div>
+                        <div class="reference-contents3">
+                            <h5>OUR SERVICES</h5>
+                            <ul class="our-services">
+                                <li>Free health checkup</li>
+                                <li>Medicine with home shipping</li>
+                                <li>Education for kids</li>
+                                <li>Consult to the doctors</li>
+                                <li>Health camp in remote areas</li>
+                                <li>Kampo technology</li>
+                            </ul>
+                        </div>
+                        <div class="reference-contents4">
+                            <h5>OUR FACILITIES</h5>
+                            <ul class="facilities">
+                                <li>Free health checkup</li>
+                                <li>Medicine with home shipping</li>
+                                <li>Education for kids</li>
+                                <li>Consult to the doctors</li>
+                                <li>Health camp in remote areas</li>
+                                <li>Kampo technology</li>
+                            </ul>
+                        </div>
+                        <div class="reference-contents5">
+                            <h5>COMMUNITY</h5>
+                            <ul class="community">
+                                <li>Free health checkup</li>
+                                <li>Medicine with home shipping</li>
+                                <li>Education for kids</li>
+                                <li>Consult to the doctors</li>
+                                <li>Health camp in remote areas</li>
+                                <li>Kampo technology</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
